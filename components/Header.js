@@ -1,6 +1,7 @@
 import { SearchIcon } from '@/public/assets/svgsIcons'
 import Link from 'next/link'
 import React, { useState, } from 'react'
+import Button from '@/components/form/Button';
 
 const Header = () => {
   const [state, setState] = useState(false)
@@ -59,12 +60,17 @@ const Header = () => {
             </ul>
           </div>
           <div className="hidden md:inline-block">
-            <Link href="/search">
+            {/* <Link href="/search">
               <a className="py-3 px-4 text-white hover:text-white inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-900 rounded-md shadow">
                 <SearchIcon />
                 <span>
                   Search
                 </span>
+              </a>
+            </Link> */}
+            <Link href="/search" >
+              <a>
+                <Button leftIcon={<SearchIcon />}> Search</Button>
               </a>
             </Link>
           </div>
