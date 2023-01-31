@@ -36,10 +36,10 @@ const MovieDetails = () => {
 
             <div className="flex justify-between mt-3 lg:mt-8">
               <div className="max-w-md ">
-                <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+                <h1 className="text-4xl font-bold text-gray-900 ">
                   {movie.originalTitle === "" ? movie.title : movie.originalTitle}
                 </h1>
-                <h2 className="text-xl font-Poppins font-bold text-gray-700 dark:text-gray-100 py-2"><b>Category:</b> {movie.genres}</h2>
+                <h2 className="text-xl font-Poppins font-bold text-gray-700  py-2"><b>Category:</b> {movie.genres}</h2>
 
                 <p className="mt-0.5 text-sm"><b>Rating: </b>{movie.imDbRating} </p>
 
@@ -65,10 +65,10 @@ const MovieDetails = () => {
                   </svg>
                 </div>
                 <p className="font-Poppins text-gray-600" >
-                  <b className="text-gray-800 ">Director: </b> {movie.directors === "" ? "N/A" : movie.directors}
+                  <b className="text-gray-900 ">Director: </b> {movie.directors === "" ? "N/A" : movie.directors}
                 </p>
                 <p className="font-Poppins text-gray-600" >
-                  <b className="text-gray-800 ">Year Produce: </b> {movie.year}
+                  <b className="text-gray-900 ">Year Produce: </b> {movie.year}
                 </p>
               </div>
 
@@ -77,7 +77,7 @@ const MovieDetails = () => {
 
             <details className="relative mt-4 group">
               <summary className="block">
-                <legend className="text-lg text-gray-800 font-Raleway dark:text-gray-100 font-bold">Description</legend>
+                <h1 className="text-lg text-gray-900 font-Raleway font-bold">Description</h1>
                 <p className="font-Poppins text-gray-600 mb-2">
                   {movie.plot}
                 </p>
@@ -88,17 +88,17 @@ const MovieDetails = () => {
                 </div>
               </summary>
 
-              <div className="pb-6 space-y-2 prose max-w-none font-Poppins  text-gray-600 dark:text-gray-400">
+              <div className="pb-6 space-y-2 prose max-w-none font-Poppins  text-gray-600 ">
                 <p className="font-Poppins text-gray-600" >
-                  <b className="text-gray-800 ">Released: </b> {movie.releaseDate}
+                  <b className="text-gray-900 ">Released: </b> {movie.releaseDate}
                 </p>
 
                 <p className="font-Poppins text-gray-600">
-                  <b className="text-gray-800 ">Actors:</b> {movie.stars}
+                  <b className="text-gray-900 ">Actors:</b> {movie.stars}
                 </p>
 
                 <p className="font-Poppins text-gray-600">
-                  <b className="text-gray-800 ">Language:</b> {movie.languages}
+                  <b className="text-gray-900 ">Language:</b> {movie.languages}
                 </p>
               </div>
             </details>
@@ -111,7 +111,7 @@ const MovieDetails = () => {
 
           </div>
         </div>
-        <h1 className="text-4xl my-6 font-bold text-gray-800 dark:text-gray-200">
+        <h1 className="text-4xl my-6 font-bold text-gray-900">
           Cast
         </h1>
         <div className='flex items-center justify-center flex-wrap my-5 '>
