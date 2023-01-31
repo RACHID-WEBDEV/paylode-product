@@ -10,9 +10,9 @@ const Button = ({ className, disabled, children, color, leftIcon, onClick, icon 
                 disabled={disabled}
                 onClick={onClick}
                 className={classNames(
-                    'relative h-auto inline-flex items-center justify-center rounded-lg transition-colors text-sm sm:text-base font-bold font-Poppins py-3 px-4 sm:py-3.5 sm:px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000 dark:focus:ring-offset-0',
-                    { 'disabled:bg-opacity-30 bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 text-slate-50 dark:text-slate-800 shadow-xl ': color === 'primary' },
-                    { ' bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 ': color === 'secondary' },
+                    'relative h-auto inline-flex items-center justify-center rounded-lg transition-colors text-sm sm:text-base font-bold font-Poppins py-3 px-4 sm:py-3.5 sm:px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000 ',
+                    { 'disabled:bg-opacity-30 bg-slate-900  hover:bg-slate-800 text-slate-50 hover:text-white  shadow-xl ': color === 'primary' },
+                    { ' bg-white text-slate-700 hover:bg-gray-100 border border-slate-200 ': color === 'secondary' },
                     className
                 )}
             >
