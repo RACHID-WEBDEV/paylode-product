@@ -35,5 +35,3 @@ export const { getSearchMovies, setSearchMovies, getSearchMovie, setSearchMovie,
 
 export default searchAllMovieSlice.reducer;
 
-
-// import { createSlice } from '@reduxjs/toolkit';
